@@ -3,9 +3,9 @@ import torch
 from torch.utils.data import DataLoader
 from transformers import AutoTokenizer
 
-from models import SimpleMoETransformer
-from data import load_and_split_dataset, make_collate_fn
-from training import train_epoch, evaluate, predict
+from moe.models import SimpleMoETransformer
+from moe.data import load_and_split_dataset, make_collate_fn
+from moe.training import train_epoch, evaluate, predict
 
 
 def main():

@@ -4,7 +4,7 @@ from typing import List
 import torch
 from transformers import AutoTokenizer
 
-from models import SimpleMoETransformer
+from moe.models import SimpleMoETransformer
 
 
 def load_model(weights_path: str, device: torch.device):
